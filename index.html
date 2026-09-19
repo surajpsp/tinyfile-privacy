@@ -1,36 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TinyFile Privacy Policy</title>
-</head>
-<body>
-
-    <h1>Privacy Policy</h1>
-
-    <p>
-        This Privacy Policy explains how TinyFile handles user information.
-    </p>
-
-    <h2>Information We Collect</h2>
-
-    <p>
-        TinyFile does not collect or store your personal files.
-    </p>
-
-    <h2>File Processing</h2>
-
-    <p>
-        Images are processed locally on your device and are not uploaded
-        to our servers.
-    </p>
-
-    <h2>Contact</h2>
-
-    <p>
-        If you have any questions, please contact us.
-    </p>
-
-</body>
-</html>
+Privacy Policy
+TinyFile compresses images on your device. Your photos are never uploaded to us, because there is no server to upload them to.
+Effective 11 September 2026 · Last updated 19 September 2026
+This policy explains what TinyFile (“the app”) does with your information. It applies to the TinyFile apps for Android, iOS, desktop and the web, published by Suraj Sharma (“we”, “us”).
+The short version. Your images are opened, compressed and saved entirely on your own device. We do not operate a server that receives them, we have no account system, and we cannot see your files, their names or their contents. The app keeps only a handful of counters and your appearance setting, locally. The current release shows no advertising and makes no network requests at all — it works with the device offline.
+1. Your images
+Images you add to TinyFile are read from the location you choose, decoded in memory, re-encoded, and written back only where you tell the app to save them. This happens using the image encoder built into your own operating system or browser.
+Images are not transmitted to us or to any third party. They are not stored by the app after you close it — the queue lives in memory only. Nothing about an image, including its file name, dimensions or contents, is recorded anywhere outside the file you save.
+2. What is stored on your device
+TinyFile keeps a small set of counters and one setting in your device’s standard local storage (Android SharedPreferences, iOS NSUserDefaults, browser localStorage, or a preferences file on desktop). This is the complete list:
+STORED VALUE	WHAT IT IS	WHY
+tinyfile_total_saved_bytes	Running total of bytes saved by compression	Shows your all-time savings figure
+tinyfile_today_saved_bytes	Bytes saved since the last daily reset	Shows today’s savings figure
+tinyfile_total_files_count	Number of images compressed, as a count	Shown on the History screen
+tinyfile_daily_quota_remaining	How many free batches are left today	Enforces the free daily allowance
+tinyfile_last_reset_timestamp	When the daily counters last reset	Works out when to reset them again
+tinyfile_unlimited_expiry_timestamp	When an unlocked unlimited pass runs out	Works out whether the pass is still valid
+tinyfile_theme_mode	System, Light or Dark	Remembers the appearance you chose
+These are plain numbers and one appearance choice. File names are not stored. Nothing in this list identifies you, your device or any particular image, and none of it is transmitted to us. No other storage is used: the current release sets no cookies and has no advertising partner.
+Device backups
+On Android, this local storage may be included in your device’s automatic backup to your own Google account, and on iOS in your iCloud or local device backup. That backup belongs to you and goes to your own account — we have no access to it.
+3. Information we do not collect
+We do not collect, store or have access to:
+* Your images, their file names, or anything derived from their contents
+* Your name, email address, phone number or postal address
+* Account credentials — TinyFile has no sign-in and no accounts
+* Your location
+* Your contacts, calendar, microphone or camera
+* Analytics or usage telemetry of any kind
+* Crash reports
+The apps never ask for access to your photo library, location, contacts, camera or microphone — images are opened only through the system file picker you invoke yourself. The Android app declares no permissions at all, not even internet access.
+4. Location and camera metadata (EXIF)
+Photographs often carry embedded EXIF metadata, which can include GPS coordinates, the camera model and the time the photo was taken. TinyFile gives you direct control of this:
+* With Remove location data switched on (the default), the compressed output contains no EXIF at all. GPS coordinates and camera information are discarded.
+* With it switched off, the original’s EXIF is carried across into the compressed file where the output format can hold it, so that data stays in the file you save.
+Either way this happens entirely on your device, and we never see the metadata in question.
+5. Advertising and cookies
+The current release of TinyFile contains no advertising. It carries no advertising SDK, sets no advertising cookie, does not read your device’s advertising identifier, and makes no network request of any kind. Compression runs entirely offline.
+The app offers a free daily allowance of compression batches, which you can extend within the app. That allowance is enforced purely by the local counters listed in section 2; nothing about it is reported anywhere.
+If advertising is introduced in a future version, this policy will be updated before that version is released, and the app’s store listings will declare it. Nothing described in this policy will start happening silently.
+6. Children
+TinyFile is a general-audience app and is not directed at children under 13 (or the equivalent minimum age in your country). We do not knowingly collect personal information from children. Because the app collects no personal information from anyone, there is nothing for us to delete — but if you believe a child has provided information to us in some way, please contact us at surajpsp@gmail.com.
+7. Your rights
+Privacy laws including the EU and UK GDPR, and the California Consumer Privacy Act, give you rights over personal data held about you — to access it, correct it, delete it, or object to its processing.
+We hold no personal data about you, so there is nothing for us to disclose, correct or erase. You can control everything the app stores by:
+* Tapping Clear history on the History screen, which resets the savings counters listed in section 2, or
+* Uninstalling the app, or clearing this site’s data in your browser, which removes all of its local storage.
+No third party processes personal data on TinyFile’s behalf, so there is no one else to ask.
+US state privacy rights — “Do Not Sell or Share”
+We do not sell or share personal information, for money or for anything else. The current release collects no personal information at all, and no identifier of any kind leaves your device, so there is nothing to opt out of. If that ever changes, this section will describe the opt-out before the change ships.
+We will not treat you differently for exercising any of these rights.
+8. Data retention
+Because we receive no data, we retain none. The local counters described in section 2 remain on your device until you clear them or uninstall the app.
+9. Changes to this policy
+If we change how the app handles data, we will update this page and revise the “Last updated” date above. Material changes will also be noted in the app’s release notes. Continuing to use TinyFile after a change means you accept the updated policy.
+10. Contact
+Questions about this policy, or about privacy in TinyFile generally, can be sent to surajpsp@gmail.com.
+Suraj Sharma
+Parwalpur, Nalanda
+Bihar 803114, India 
+TinyFile — on-device image compression for Android, iOS, desktop and the web.
